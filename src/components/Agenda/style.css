@@ -1,0 +1,14 @@
+.Dados{
+background-color: #fff;
+display: flex;
+border-radius: 8px;
+padding: 15PX;
+
+
+}
+.Dados img{
+    clip-path: circle();
+    padding: 5px;
+}
+
+
