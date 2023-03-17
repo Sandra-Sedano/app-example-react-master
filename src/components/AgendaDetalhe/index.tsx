@@ -8,6 +8,7 @@ export function AgendaDetalhe() {
         <img src="https://randomuser.me/api/portraits/men/14.jpg" alt="" />
       <p>Nome</p>
       <p>Email</p>
+      
       <div> <Button text='Detalhe' type='primary'/></div>
       </section>
 
