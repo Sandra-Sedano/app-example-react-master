@@ -1,0 +1,26 @@
+.Dados {
+    display: flex;
+background-color: #fff;
+justify-content: space-between;
+gap: 4px;
+display: flex;
+border-radius: 8px;
+padding: 15PX;
+padding: 10px;
+
+
+
+}
+
+.dadosContato {
+padding: 25px;
+
+
+}
+.Dados img{
+    clip-path: circle();
+
+
+}
+
+

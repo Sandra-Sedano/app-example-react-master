@@ -22,16 +22,16 @@ export function Home() {
 
                 <Menu>
                     <Link to='/Agenda'>
-                    <MenuItem icon={<AddressBook />} text="Agenda" />
+                        <MenuItem icon={<AddressBook />} text="Agenda" />
                     </Link>
-                   
+
 
                     <Link to='/gallery'>
 
 
                         <MenuItem icon={<ImageSquare />} text="Gallery" />
                     </Link>
-
+                   
                 </Menu>
             </main>
 

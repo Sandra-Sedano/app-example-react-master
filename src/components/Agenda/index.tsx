@@ -1,17 +1,18 @@
-
-import { AgendaDetalhe } from '../AgendaDetalhe'
 import './style.css'
-export function Agenda() {
+import { AgendaDetalhe } from '../AgendaDetalhe'
+type AgendaProps = {
+    children: React.ReactNode
+}
+
+export function Agenda({ children }: AgendaProps) {
+    
     return (
         <>
+
             <div className='Descricao'>
-                <h1> Agenda de Contatos</h1>
+                {children}
             </div>
-            <div className='Input' >
-                <input type="text" />
-            </div>
-            <AgendaDetalhe/>
-     
+
 
         </>
     )
