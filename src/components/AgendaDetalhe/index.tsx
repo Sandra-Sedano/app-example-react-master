@@ -1,14 +1,33 @@
 import './style.css'
-import { Button } from "../../components/Button";
+//import { Button } from "../../components/Button";
+import { dados } from '../types';
+import { Button } from '@mui/material';
+
 type contactProps = {
-    contactData:
+    contactData: dados // VAI PUXAR DA PASTA TYPES
 }
-export function AgendaDetalhe() {
+
+export function AgendaDetalhe({contactData}:contactProps) {
+
+    const {name, email, picture} = contactData
+
     return (
         <>
             <section className='Dados'>
+
+                <img src={picture.medium} alt="" />
+                <div className='dadosContato'>
+                    <p>{name.first}</p>
+                    <p>{email}</p>
+
+                    <Button variant="contained" component="label">
+                        DETALHE
+                    </Button>
+                    {/*<Button text='Detalhe' type='primary' />*/}
+                </div>
               
 
+                {/*
                 <img src="https://randomuser.me/api/portraits/men/14.jpg" alt="" />
                 <div className='dadosContato'>
 
@@ -17,6 +36,7 @@ export function AgendaDetalhe() {
                     <Button text='Detalhe' type='primary' />
 
                 </div>
+                */}
 
             </section>
 

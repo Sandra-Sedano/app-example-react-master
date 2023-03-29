@@ -3,6 +3,9 @@ import { Agenda } from "../../components/Agenda";
 import { AgendaDetalhe } from "../../components/AgendaDetalhe";
 import { Title } from "../../components/Title";
 import { getContacts } from "../../services/api"
+import {dados} from '../../components/types'
+
+/*
 type contact = {
     name: {
         first: string,
@@ -13,11 +16,11 @@ type contact = {
         medium: string
     }
 
-}
+}*/
 
 export function Contacts() {
     const [search, setSearch] = useState('')
-    const [contacts, setContacts] = useState<contact[]>([])
+    const [contacts, setContacts] = useState<dados[]>([])
 
     useEffect(() => {
 
@@ -36,14 +39,12 @@ export function Contacts() {
 
                     <Agenda>
                         {
-                            contacts.map(contact => {
-                                return <AgendaDetalhe/>}
-                            
-                        
+                            contacts.map(dados => {
+                                return <AgendaDetalhe contactData={dados}/>
+                            })
                         }
-                      
-
                     </Agenda>
+
                 </main>
             </header>
 

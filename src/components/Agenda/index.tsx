@@ -1,5 +1,5 @@
 import './style.css'
-import { AgendaDetalhe } from '../AgendaDetalhe'
+//import { AgendaDetalhe } from '../AgendaDetalhe'
 type AgendaProps = {
     children: React.ReactNode
 }
